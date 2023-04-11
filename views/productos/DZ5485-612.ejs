@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles Producto</title>
+    <!--LINK BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.css">-->
+    <script src="https://kit.fontawesome.com/448295081a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/styleprueba.css">
+
+    <style>
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col{
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+        .sprodcut select{
+            display: block;
+            padding: 5px 10px;
+        }
+        .sprodcut input{
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size:  16px;
+            margin-right: 10px;
+        }
+        .sprodcut input:focus{
+            outline: none;
+        }
+        .buy-btn{
+            background: rgb(153, 31, 31);
+            opacity: 1;
+            transition: 0.3s all;
+            display: inline-block;
+            margin-top: 1rem;
+            border-radius: .5rem;
+            border: .2rem solid #000;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            color: #ffffff;
+            cursor: pointer;
+            padding: .8rem 3rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div id="menu-bar" class="fa fa-bars"></div>
+        
+        <nav class="navbar">
+            <a href="/inicio">Inicio</a>
+        <a href="#product">Productos</a>
+        <a href="#news">Noticias</a>
+        <a href="#review">Acerca de</a>
+        <a href="#help">Ayuda</a>
+        </nav>
+        <div class="icons">
+           
+            <a href="/formulario"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+    <!--END HEADER-->
+    <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5" >
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-4" src="images/<%=tenis[0].imagen%>" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="/imgs/product1/2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/imgs/product1/2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/imgs/product1/2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/imgs/product1/2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-12">
+              <form action="/DZ5485-612" method="post">
+                <select class="my-3" name="talla">
+                  <option value="">Selecciona tu talla</option>
+                  <option value="tallaCinco">Talla 5</option>
+                  <option value="tallaSeis">Talla 6</option> 
+                  <option value="tallaSiete">Talla 7</option>
+                  <option value="tallaOcho">Talla 8</option>
+                  <option value="tallaNueve">Talla 9</option>
+                  <option value="tallaDiez">Talla 10</option>
+              </select>
+              <input type="number" value="" name="cantidad">
+              <button class="buy-btn" type="submit">Agregar al carrito</button>
+              </form>
+                <h6>Inicio / Tenis</h6>
+                <h3 class="py-4" style="font-weight: bold;"><%=tenis[0].nombre%></h3>
+                <h2><%=tenis[0].precio%></h2>
+                <h4 class="mt-5 mb-5">Detalles del producto</h4>
+                <span><%=tenis[0].descripcion%></span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="footer">
+        <div class="col-1">
+            <h3>Enlaces sugeridos</h3>
+            <a href="#">Acerca de</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <div class="col-2">
+            <h3>Novedades</h3>
+            <form action="">
+                <input type="email" placeholder="Correo electronico" required>
+                <br>
+                <button type="submit">Suscribete ahora!</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>Contacto</h3>
+            <p>Ciudad de México <br>México</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+    </section>
+    <script src="/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

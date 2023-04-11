@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://kit.fontawesome.com/448295081a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/style-shop-cart.css">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div id="menu-bar" class="fa fa-bars"></div>
+        
+        <nav class="navbar">
+            <a href="/inicio">Inicio</a>
+        <a href="/productos.html">Productos</a>
+        <a href="#news">Noticias</a>
+        <a href="#review">Acerca de</a>
+        <a href="#help">Ayuda</a>
+        </nav>
+        <div class="icons">
+            
+            <a href="/formulario"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+
+    <!--CART-->
+    <div style="display:flex;">
+        <section class="shopping-cart" id="shopping-cart" style="flex-basis: 50%;">
+            <h1 class="heading">Carrito de <span>compras</span></h1>
+            <div class="box-container">
+                <div class="small-container cart-page">
+                    <table>
+                        <tr>
+                            <th>Productos</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="../../images/<%=tenis.imagen%>">
+                                    <div>
+                                        <p><%=tenis.nombre%></p>
+                                        
+                                        <small><%=tenis.precio%></small>
+                                        <br>
+                                        
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                           
+                        </tr>
+                        
+                    </table>
+                    <div class="total-price">
+                        <table>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td><%=tenis.precio%></td>
+                            </tr>
+                            <tr>
+                                <td>Envio</td>
+                                <td>$0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td><%=tenis.precio%></td>
+                            </tr>
+                        </table>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section class="shopping-cart" id="shopping-cart" style="flex-basis: 50%;">
+            <h1 class="heading">Formulario <span>de envío</span></h1>
+            <div class="box-container">
+                
+                    <form>
+                        <div class="form-group">
+                            <label for="my-input">Nombre completo:</label>
+                            <input id="my-input" class="form-control" type="text" name="nombre">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label for="my-input">Calle y numero:</label>
+                            <input id="my-input" class="form-control" type="text" name="calle">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label for="my-input">Colonia:</label>
+                            <input id="my-input" class="form-control" type="text" name="colonia">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label for="my-input">Estado:</label>
+                            <input id="my-input" class="form-control" type="text" name="estado">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label for="my-input">Codigo postal:</label>
+                            <input id="my-input" class="form-control" type="text" name="cp">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label for="my-input">Telefono:</label>
+                            <input id="my-input" class="form-control" type="text" name="telefono">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <label for="my-input">Correo:</label>
+                            <input id="my-input" class="form-control" type="text" name="correo">
+                        </div>
+                        <br>
+                        <br>
+                        <a href="/gracias" class="button">Finaliza tu compra</a>
+                    </form>
+                    
+                
+            </div>
+    </div>
+    
+    
+    <!--FOOTER-->
+    <section class="footer">
+        <div class="col-1">
+            <h3>Enlaces sugeridos</h3>
+            <a href="#">Acerca de</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <div class="col-2">
+            <h3>Novedades</h3>
+            <form action="">
+                <input type="email" placeholder="Correo electronico" required>
+                <br>
+                <button type="submit">Suscribete ahora!</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <h3>Contacto</h3>
+            <p>Ciudad de México <br>México</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

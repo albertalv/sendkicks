@@ -1,0 +1,29 @@
+<%- include ("../layouts/cabecera.ejs")%>
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card tex-center">
+                <div class="card-header">
+                    <h3>Iniciar Sesion</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="/iniciarSesion">              
+        <div class="form-group">
+            <label for="my-input">usuario</label>
+            <input id="my-input" class="form-control" type="text" name="usuario">
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <label for="my-input">contraseña</label>
+            <input id="password" class="form-control" type="password" name="pass">
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit" style="width: 100%;"> Enviar</button>
+    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    

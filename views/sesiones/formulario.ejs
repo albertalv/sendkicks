@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.css">-->
+    <script src="https://kit.fontawesome.com/448295081a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/style-login.css">
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fa fa-bars"></div>
+       
+        <nav class="navbar">
+            <a href="/inicio">Inicio</a>
+        <a href="#product">Productos</a>
+        <a href="#news">Noticias</a>
+        <a href="#review">Acerca de</a>
+        <a href="#help">Ayuda</a>
+        </nav>
+        <div class="icons">
+            
+            <a href="/formulario"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+    <section class="body-fake">
+        <div class="wrapper">
+            <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+            
+            <div class="form-box login" >
+                <h2>Iniciar sesión</h2>
+                <form method="post" action="/iniciarSesion">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="text" required name="usuario">
+                        <label for="">Correo</label>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required name="pass">
+                        <label for="">Contraseña</label>
+                    </div>
+
+                    
+                    <button type="submit" class="btn">Ingresar</button>
+                    
+                </form>
+            </div>
+
+
+            <div class="form-box register">
+                <h2>Registrarme</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" required>
+                        <label for="">Usuario</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required>
+                        <label for="">Correo</label>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label for="">Contraseña</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label for=""><input type="checkbox"> Acepto los terminos y condiciones</label>
+                        
+                    </div>
+                    <button type="submit" class="btn">Registrarme</button>
+                    <div class="login-register">
+                        <p>Tengo una cuenta <a href="#" class="login-link">Ingresar</a></p>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </section>
+    <script src="/javascript/script-login.js"></script>
+</body>
+</html>
+
+
+

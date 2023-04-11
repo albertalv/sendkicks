@@ -1,0 +1,259 @@
+*{
+    font-family:iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+html{
+    font-size: 60%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+/*HEADER*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header .logo{
+    font-size: 2rem;
+    color: #000;
+    font-weight: 500;
+}
+header .navbar a{
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0 2rem;
+}
+header .navbar a:hover{
+    color: orangered;
+}
+header .icons a{
+    font-size: 2rem;
+    color: #000;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color: orangered;
+}
+#menu-bar{
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border: .1rem solid #000;
+    color: #000;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 2rem 9%;
+}
+
+/*PRODUCT*/
+.shopping-cart{
+    padding-top: 5%;
+    max-width: 10000px;
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    padding: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.heading span{
+    color: rgb(252, 118, 69);
+}
+.box-container{
+    max-width: 10000px;
+    width: 100%;
+    margin: 100px auto;
+    padding: 25px 30px 30px 30px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.199);
+}
+.small-container{
+    max-width: 10000px;
+    width: 100%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #ff523b;
+    font-weight: normal;
+    font-size: 2rem;
+}
+td{
+    padding: 10px 5px;
+    font-size: 1.5rem;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+}
+p{
+    font-size: 2rem;
+}
+small{
+    font-size: 1.5rem;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 370px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.button{
+    background-color: #ff523b;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover{
+    background-color: #ff1e00;
+}
+/*SIDEBAR*/
+
+
+/*FOOTER STYLE*/
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 50px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.footer h3{
+    text-align: center;
+    font-size: 15px;
+}
+.footer .col-2{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.footer .col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.footer .col-2 form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+.footer .col-2 form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.footer .col-3 .social-icons{
+    margin-top: 30px;
+}
+.footer .col-3 .social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Responsive  */
+@media (max-width:768px){
+    #menu-bar{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        width: 100%;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+    }
+    header .navbar a{
+        font-size: 2rem;
+        background: #fff;
+        border: .1rem solid #000;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+    header .navbar.active{
+        left: 0;
+    }
+}

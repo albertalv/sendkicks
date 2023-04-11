@@ -1,0 +1,54 @@
+<%- include ("../layouts/cabecera.ejs")%>
+
+<form method="post" action="/actualizar" enctype="multipart/form-data">
+    
+    <div class="form-group">
+        <label for="my-input">id</label>
+        <input id="my-input" value="<%=tenis.id%>" class="form-control" type="text" name="id">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="my-input">Nombre</label>
+        <input id="my-input" value="<%=tenis.nombre%>" class="form-control" type="text" name="nombre">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="my-input">Descripcion</label>
+        <input id="my-input" value="<%=tenis.descripcion%>" class="form-control" type="text" name="descripcion">
+    </div>
+    <div class="form-group">
+        <label for="my-input">Cantidad talla 5</label>
+        <input id="my-input" value="<%=tenis.tallaCinco%>" class="form-control" type="text" name="tallaCinco">
+    </div>
+    <div class="form-group">
+        <label for="my-input">Cantidad talla 6</label>
+        <input id="my-input" value="<%=tenis.tallaSeis%>" class="form-control" type="text" name="tallaSeis">
+    </div>
+    <div class="form-group">
+        <label for="my-input">Cantidad talla 7</label>
+        <input id="my-input" value="<%=tenis.tallaSiete%>" class="form-control" type="text" name="tallaSiete">
+    </div>
+    <div class="form-group">
+        <label for="my-input">Cantidad talla 8</label>
+        <input id="my-input" value="<%=tenis.tallaOcho%>" class="form-control" type="text" name="tallaOcho">
+    </div>
+    <div class="form-group">
+        <label for="my-input">Cantidad talla 9</label>
+        <input id="my-input" value="<%=tenis.tallaNueve%>" class="form-control" type="text" name="tallaNueve">
+    </div>
+    <div class="form-group">
+        <label for="my-input">Cantidad talla 10</label>
+        <input id="my-input" value="<%=tenis.tallaDiez%>" class="form-control" type="text" name="tallaDiez">
+    </div>
+    <div class="form-group">
+        <label for="my-input">Precio</label>
+        <input id="my-input" value="<%=tenis.precio%>" class="form-control" type="text" name="precio">
+    </div>
+    <div class="form-group">
+        <label for="my-input">Imagen</label>
+        <img class="img-thumbnail" src="../../images/<%=tenis.imagen%>" width="100" alt="">
+        <input id="my-input" class="form-control-file" type="file" name="imagen">
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit" >Guardar</button>
+</form>

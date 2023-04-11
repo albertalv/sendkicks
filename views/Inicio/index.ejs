@@ -1,0 +1,301 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tenis</title>
+        <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.css">-->
+        <script src="https://kit.fontawesome.com/448295081a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+        <header>
+            <div id="menu-bar" class="fa fa-bars"></div>
+            
+            <nav class="navbar">
+                <a href="/index.html">Inicio</a>
+            <a href="#product">Productos</a>
+            <a href="#news">Noticias</a>
+            <a href="#review">Acerca de</a>
+            <a href="#help">Ayuda</a>
+            </nav>
+            <div class="icons">
+                
+                <a href="/formulario"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </header>
+        <!--end header-->
+        <section class="home" id="home">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Street Shoes</span>
+                        <h3><%=imagenes[1].nombre%></h3>
+                        <p>
+                            <%=imagenes[1].descripcion%>
+                        </p>
+                        <a href="/DZ5485-612" class="btn">VER AQUI</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/<%=imagenes[1].imagen%>" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Street Shoes</span>
+                        <h3><%=imagenes[0].nombre%></h3>
+                        <p>
+                            <%=imagenes[0].descripcion%>
+                        </p>
+                        <a href='/CD4487_100' class="btn">VER AQUI</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/<%=imagenes[0].imagen%>" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Adidas Sport Shoes</span>
+                        <h3><%=imagenes[2].nombre%></h3>
+                        <p>
+                            <%=imagenes[2].descripcion%>
+                        </p>
+                        <a href="/FW4980" class="btn">VER AQUI</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/<%=imagenes[2].imagen%>" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Adidas Street Shoes</span>
+                        <h3><%=imagenes[3].nombre%></h3>
+                        <p>
+                            <%=imagenes[3].descripcion%>
+                        </p>
+                        <a href="/GW0264" class="btn">VER AQUI</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/<%=imagenes[3].imagen%>" class="shoe">
+                    </div>
+                </div>
+            </div>
+
+            <div id="prev" class="fa fa-angle-left" onclick="prev();"></div>
+            <div id="next" class="fa fa-angle-right" onclick="next();"></div>
+        </section>
+        <!--end home-->
+        <section class="product" id="product">
+            <h1 class="heading">Ultimos <span>Productos</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="/DJ0950_116" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src= "images/<%=imagenes[9].imagen%>">
+                        <h3><%=imagenes[9].nombre%></h3>
+                        <div class="price"><%=imagenes[9].precio%></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="/B75571" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/<%=imagenes[5].imagen%>" alt="">
+                        <h3><%=imagenes[5].nombre%></h3>
+                        <div class="price"><%=imagenes[5].precio%></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="/DR5415_103" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/<%=imagenes[6].imagen%>"  alt="">
+                        <h3><%=imagenes[6].nombre%></h3>
+                        <div class="price"><%=imagenes[6].precio%></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="/CV9388_100" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/<%=imagenes[7].imagen%>"  alt="">
+                        <h3><%=imagenes[7].nombre%></h3>
+                        <div class="price"><%=imagenes[7].precio%></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="/CU1726_101" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/<%=imagenes[8].imagen%>" alt="">
+                        <h3><%=imagenes[8].nombre%></h3>
+                        <div class="price"><%=imagenes[8].precio%></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="/CT2552_800" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/<%=imagenes[4].imagen%>" alt="">
+                        <h3><%=imagenes[4].precio%></h3>
+                        <div class="price"><%=imagenes[4].precio%></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end product-->
+        
+        <!--end featured-->
+        <section class="blog" id="blog">
+            <h1 class="heading">Equipo <span>Sendkicks</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="/images/1.jpg" alt="">
+                    <h3>Ghoodra</h3>
+                    <p>
+                        Responsable del FrontEnd, apasionado por la producción musical
+                    </p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/images/alberto.jpg" alt="">
+                    <h3>Alberto</h3>
+                    <p>
+                        Responsable del BackEnd, tiene dos pasiones en la vida, leer y coleccionar tenis
+                    </p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!--end blog-->
+        <section class="news" id="news">
+            <div class="content">
+                <h3>Suscripcion para noticias mensuales</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fuga sed itaque ducimus maxime facere nihil expedita non sunt? Nostrum, voluptatem?
+                </p>
+                <form action="">
+                    <input type="email" placeholder="please enter your email" class="email">
+                    <input type="submit" value="save" class="btn">
+                </form>
+            </div>
+        </section>
+        <!--end news-->
+        <section class="cridet" id="cridet">
+            <div class="box">
+                <h3>footer??</h3>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="col-1">
+                <h3>Enlaces sugeridos</h3>
+                <a href="#">Acerca de</a>
+                <a href="#">Servicios</a>
+                <a href="#">Contacto</a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            <div class="col-2">
+                <h3>Novedades</h3>
+                <form action="">
+                    <input type="email" placeholder="Correo electronico" required>
+                    <br>
+                    <button type="submit">Suscribete ahora!</button>
+                </form>
+            </div>
+            <div class="col-3">
+                <h3>Contacto</h3>
+                <p>Ciudad de México <br>México</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+<script src="/javascript/script.js"></script>
